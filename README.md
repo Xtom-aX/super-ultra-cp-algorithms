@@ -1,3 +1,3 @@
 # super-ultra-cp-algorithms
 
-A collection of algorithms for personal use.
+A collection of algorithms for personal offline use.
