@@ -7,6 +7,26 @@ using namespace std;
 const int MOD = 1000000007;
 const int POW = 911;
  
+// daje hash DRZEWA.
+// daje rozny hash dla roznych korzeni
+//
+// izomorfizm dwoch drzew
+// czyli mozna w jednym zamienic numery wierzcholkow
+// tak aby bylo takie samo jak drugie
+// 
+// aby sprawdzic czy dwa drzewa ukorzenione
+// sa izomorficzne
+// uzyj
+// hash_(root1, graph1, empty) == hash_(root2, graph2, empty2)
+//
+// dla drzew nieukorzenionych
+// znajdz srodek srednicy
+// moga byc dwa
+// nastepnie sprawdz wszystkie cztery kombinacje
+// jezeli kiedys sa rowne to sa izomorficzne.
+//
+// uzywaj oby dwoch wartosci.
+// jezeli potrzebujesz inta uzyj tylko pierwszej nigdy drugiej
 pair<int, int> hash_(int v, vector<vector<int>> &graph, vector<bool> &vis)
 {
     vector<pair<int, int>> podhashe;

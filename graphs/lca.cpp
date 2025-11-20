@@ -1,3 +1,5 @@
+// daje najnizszego wspolnego przodka dla dwoch nodow w drzewie
+
 #include <vector>
 #include <math.h>
 
@@ -46,6 +48,8 @@ int jump(int v, int k) {
     return v;
 }
 
+
+
 int lca(int a, int b) {
     if (depths[b] > depths[a])
         swap(a, b);
@@ -62,7 +66,3 @@ int lca(int a, int b) {
 
     return jmp[a][0];
 }
-
-
-
-int main() {}

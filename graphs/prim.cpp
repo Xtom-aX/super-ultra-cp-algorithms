@@ -1,3 +1,6 @@
+// tworzy (spojne drzewo ktore zawiera wszystkie wierzcholki dowolnego grafu) o minimalnej sumie wag
+// zwraca jedynie sume wag
+
 #include <vector>
 #include <queue>
 
